@@ -1,0 +1,176 @@
+%-------------------------
+% Resume in Latex
+% Author : Gabriel Sison
+% Based off of: https://github.com/sb2nov/resume
+% License: MIT
+%------------------------
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%% Random Stuff %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[letterpaper,11pt]{article}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-7pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{0pt}]
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Commands  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-3pt}}
+  }
+}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-3pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeSubheadingContinue}[2]{
+  \vspace{-3pt}
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeProjectHeading}[2]{
+  \vspace{-3pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{0pt}}
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{0pt}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Heading  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+    \begin{center}
+        % NAME
+        {\Huge\scshape RIMMALAPUDI ESHWAR KARTHIK} 
+        % SUBHEADING
+        
+        \small
+        % EMAIL
+        \href{mailto:vtu20991@veltech.edu.in}{\raisebox{-0.2\height}\faEnvelope\  \underline{Email}} ~ 
+        % LINKEDIN
+        \href{https://www.linkedin.com/in/karthik-mech/}{\raisebox{-0.2\height}\faLinkedin\ \underline{Linkedin}}  ~
+        \href{}{\raisebox{-0.2\height}\faPhone\ \underline{+91 8897772833}}
+    \end{center}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Education  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{\textbf{Education}}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Vel Tech Rangarajan Dr.Sagunthala R&D Institute of Science and Technology, chennai}{CGPA: 7.6}
+      {B.tech}{05-2025}
+       \resumeSubheading
+      {Mandapeta Public School & Junior college}{Percentage: 57.3}
+      {Board of Intermediate Education, Andhra Pradesh}
+     {05-2021}
+      {Mandapeta Public School }{Percentage: 87}
+      {Board of Secondary Education, Andhra Pradesh}
+     {05-2019}
+  \resumeSubHeadingListEnd
+\vspace{-5.0mm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%  PROJECTS  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Personal Projects} 
+    \resumeSubHeadingListStart
+
+        % Project 1
+        \resumeProjectHeading
+        {IPDIMS conference|Live Application}
+        % Date
+        {04-2023}
+        \resumeItemListStart
+            \resumeItem{I developed and maintained a dynamic website for the IPDIMS conference using React.js, TailwindCSS, and EmailJS. This website serves as a centralized platform offering current information on conference details, including announcements and deadlines, ensuring attendees stay informed. Moreover, the application functions as a streamlined submission portal for user research papers, integrating EmailJS to facilitate the direct submission of papers to administrators via email. This comprehensive approach enhances conference management by providing both informational updates and efficient paper submission processes.}
+        \resumeItemListEnd
+    
+        % Project 2
+        \resumeProjectHeading
+        {Vehicle Parking Management System}
+        % Date
+        {04-2023}
+        \resumeItemListStart
+            \resumeItem{ 
+I developed a robust Vehicle Parking Management System using SQL and DBMS principles. This system caters specifically to parking lot administrators, providing essential functionalities for tracking vehicles within a building. It features a user-friendly interface for efficient management, allowing administrators to add new vehicles into the database using MySQL queries. Additionally, the system supports seamless deletion of vehicles from records, ensuring accurate and uptodate parking data. Leveraging SQL capabilities ensures data integrity and reliability, crucial for maintaining organized parking resources and facilitating informed decision-making. Overall, this project highlights expertise in SQL and DBMS, demonstrating practical application in optimizing parking facility operations
+}
+        \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Technical Skills  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Technical Skills}
+    \vspace{-7pt}
+    \begin{itemize}
+    [leftmargin=0.15in, label={}]\small{\item{
+        % LANGUAGES
+        \textbf{Programming Languages}{: c,c++,python} \\
+        % TOOLS
+        \textbf{Developer Tools}{vscode,Jupiter,Git} \\
+        % TECHNOLOGIES
+        \textbf{Technologies/Libraries}{:HTML, CSS, javascript, Reactjs
+} \\}}
+         \textbf{Cloud/Databases}{: MySql} \\
+         \textbf{Coursework}{: Data Structures and Algorithms, Object Oriented Programming, Operating Systems, 
+Database Management System, Machine Learning} 
+    \end{itemize}
+\vspace{-16pt}
+
+%-----------Positions of Responsibility-----------
+
+%-----------Achievements---------%/
+ \section{Achievements/Certifications} 
+    \resumeSubHeadingListStart
+            \resumeItem{• 5* Coder at HackerRank}
+            \resumeItem{• codechef  rating 1652}
+            \resumeItem{•Established resiliency and flexibility under stressful situations during competitive games. Fostered a welcoming
+and cooperative team environment that promoted ongoing learning and development.
+
+}
+\resumeItem{•Led the teams for Innovision Fest, developing and implementing creative and aesthetic designs that transformed
+the campus and enhanced the festival atmosphere
+}
+                
+          
+    \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+ 
+\end{document}
